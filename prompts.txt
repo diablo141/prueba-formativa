@@ -1,0 +1,6 @@
+prompts1 = crea un html para un evento de videojuegos
+prompts2 = mejora el css con un estilo moderno
+prompts3 = agrega secciones como beneficios y contactos
+prompts4 =
+prompts5 =
+
