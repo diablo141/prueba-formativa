@@ -321,9 +321,34 @@ section {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .hero {
+        min-height: 85vh;
+    }
+
+    .section {
+        padding: 4rem 1.5rem;
+    }
+
+    .cards,
+    .features,
+    .contact-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero {
+        min-height: auto;
         padding: 3rem 1rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
     }
 
     .section,
@@ -331,7 +356,39 @@ section {
         border-radius: 22px;
     }
 
+    .section {
+        padding: 3rem 1rem;
+    }
+
     .hero p {
-        font-size: 1rem;
+        font-size: 0.98rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .section h2 {
+        font-size: 2rem;
+    }
+
+    .cards,
+    .features,
+    .contact-grid,
+    .schedule,
+    .prizes {
+        gap: 0.95rem;
+    }
+
+    .schedule li,
+    .prizes li,
+    .feature-card,
+    .contact-card,
+    .card {
+        padding: 1rem 1.15rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        justify-content: center;
+        padding: 1rem 1.2rem;
     }
 }
